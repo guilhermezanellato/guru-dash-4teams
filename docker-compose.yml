@@ -17,7 +17,7 @@ services:
       - ./grafana/provisioning/:/etc/grafana/provisioning/
       - ./grafana/dashboards/:/var/lib/grafana/dashboards/
     environment:
-      - GF_INSTALL_PLUGINS=aceiot-svg-panel
+      - GF_INSTALL_PLUGINS=aceiot-svg-panel,marcusolsson-csv-datasource,frser-sqlite-datasource
     depends_on:
       - influxdb
 
